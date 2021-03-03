@@ -36,8 +36,8 @@ if (email != null) {
 var nome = prompt("Inserisci il tuo nome");
 
 //tiro i dadi
-var giocatore = parseInt(Math.random() * (6 - 1) + 1);
-var computer = parseInt(Math.random() * (6 - 1) + 1);
+var giocatore = Math.floor(Math.random() * 6) + 1;
+var computer = Math.floor(Math.random() * 6) + 1;
 
 //inizializzo variabile per stampare in html
 var vincitore = document.getElementById("bonus");
